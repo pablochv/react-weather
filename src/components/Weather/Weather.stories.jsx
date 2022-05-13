@@ -6,4 +6,11 @@ export default {
     component: Weather
 }
 
-export const WeatherExample = () => <Weather temperature={10}></Weather>
+const WeatherExample = (temperature, state) => <Weather temperature={temperature} state={state}></Weather>
+
+export const FirstStory = {
+    args: {
+        temperature: 24,
+        state: "cloud"
+    }
+}
